@@ -28,7 +28,7 @@ formData.append("file", {
 formData.append("agent", agent);
 formData.append("product", product);
 
-const res = await axios.post("http://YOUR_SERVER_URL/api/analyze", formData, {
+const res = await axios.post("http://call-analyser-six.vercel.app/api/analyze", formData, {
   headers: { "Content-Type": "multipart/form-data" },
 });
 
